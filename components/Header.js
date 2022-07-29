@@ -26,7 +26,7 @@ const Haeder = () => {
                 <Image src="https://links.papareact.com/5me" width={40} height={40} layout="fixed" alt='facebook' />
                 <div className='flex ml-2 items-center rounded-full bg-gray-100 p-2'>
                     <SearchIcon className='h-6 text-gray-600' />
-                    <input className='hidden md:inline flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink' type="text" placeholder='Search Facebook' />
+                    <input className='hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink' type="text" placeholder='Search Facebook' />
                 </div>
             </div>
             
@@ -42,7 +42,7 @@ const Haeder = () => {
             <div className='flex items-center sm:space-x-2 justify-end'>
                 <Image onClick={signOut} src={session.user.image} className="rounded-full cursor-pointer" height={40} width={40} alt='' />
 
-                <p className='font-semibold pr-3 whitespace-nowrap'>{session.user.name}</p>
+                <p className='hidden lg:inline-flex text-sm whitespace-nowrap font-semibold pr-3'>{session.user.name}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
                 <BellIcon className='icon' />
